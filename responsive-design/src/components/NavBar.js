@@ -1,6 +1,6 @@
 import './NavBar.css';
 
-const NavBar = ({ links }) => {
+const NavBar = ({ links, isMenuOpen, toggleMenu }) => {
 
     return (
         <nav>
@@ -8,7 +8,7 @@ const NavBar = ({ links }) => {
             <ul>
                 {links.map( link => <li>{link}</li>)}
             </ul>
-            <a>Menu<img src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-1.jpg"/></a>
+            <a onClick={toggleMenu}>Menu<img src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-1.jpg"/></a>
         </nav>
     )
 }

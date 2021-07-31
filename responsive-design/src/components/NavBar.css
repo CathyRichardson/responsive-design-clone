@@ -20,6 +20,10 @@ ul {
     text-transform: uppercase;
 }
 
+li {
+    cursor: pointer;
+}
+
 a {
     color: gray;
     display: flex;
@@ -30,6 +34,7 @@ a {
     border:  1px solid gray;
     box-sizing: border-box;
     padding: 5px;
+    cursor: pointer;
 }
 
 a img {

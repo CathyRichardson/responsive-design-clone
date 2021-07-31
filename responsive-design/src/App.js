@@ -16,13 +16,22 @@ class App extends React.Component {
 
   }
 
+  toggleMenu = () => {
+    console.log("setting menu to: ", !this.state.isMenuOpen);
+    this.setState({ isMenuOpen: !this.state.isMenuOpen })
+  }
+
   render() {
     const { navLinks, isMenuOpen } = this.state;
     return (
 
       <div className="App" >
         <div className="main-header">
-          <NavBar links={navLinks} />
+          <NavBar
+            links={navLinks}
+            isMenuOpen={isMenuOpen}
+            toggleMenu={this.toggleMenu}
+          />
           <Header />
         </div>
         <Services />
