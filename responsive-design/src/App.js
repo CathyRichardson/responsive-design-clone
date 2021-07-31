@@ -17,12 +17,14 @@ class App extends React.Component {
   }
 
   render() {
-    const {navLinks, isMenuOpen} = this.state;
+    const { navLinks, isMenuOpen } = this.state;
     return (
 
       <div className="App" >
-        <NavBar links={navLinks}/>
-        <Header />
+        <div className="main-header">
+          <NavBar links={navLinks} />
+          <Header />
+        </div>
         <Services />
       </div >
     );
