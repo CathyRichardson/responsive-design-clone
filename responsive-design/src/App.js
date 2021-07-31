@@ -17,7 +17,6 @@ class App extends React.Component {
   }
 
   toggleMenu = () => {
-    console.log("setting menu to: ", !this.state.isMenuOpen);
     this.setState({ isMenuOpen: !this.state.isMenuOpen })
   }
 
