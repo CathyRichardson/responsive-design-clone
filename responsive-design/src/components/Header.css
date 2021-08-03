@@ -1,39 +1,51 @@
 header {
-    /* background-image: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg'); */
-    background-color: transparent;
-    color: #ffffff;
-    height: 75vh;
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: transparent;
+  color: #ffffff;
+  height: 75vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
 
-h1{
-    margin-top: 1.5rem;
-    text-transform: uppercase;
-    font-size: 4.5rem;
+h1 {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-size: 4.5rem;
 }
 
 h3 {
-    font-size: 2.25rem;
-    font-style: italic;
+  font-size: 2.25rem;
+  font-style: italic;
 }
 
 button {
-    margin-top: 1.5rem;
-    cursor: pointer;
-    background-color: #ffc800;
-    padding: 1.25rem 2.5rem;
-    font-size: 1.125rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 0.25rem;
-    border: 1px solid transparent;
-   
+  margin-top: 1.5rem;
+  cursor: pointer;
+  background-color: #ffc800;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+}
+
+@media (max-width: 990px) {
+ header {
+     padding: 50px 100px;
+ }
+}
+
+@media (max-width: 768px) {
+ h1{
+     font-size: 3.25rem;
+ }
+
+ h3{
+     font-size: 1.5rem;
+ }
 }

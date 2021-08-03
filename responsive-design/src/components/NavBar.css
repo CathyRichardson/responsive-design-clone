@@ -30,42 +30,45 @@ li {
 }
 
 a {
+  display: none;
   color: gray;
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 13px;
   background-color: transparent;
-  border: 1px solid gray;
-  box-sizing: border-box;
+  border: 1px solid #44484c;
+  border-radius: 0.25rem;
   padding: 5px;
   margin-right: 80px;
   cursor: pointer;
-  display: none;
+}
+
+a:focus {
+  box-shadow: 0 0 0 0.25rem;
 }
 
 a img {
   height: 15px;
-  width: 15px;
+  width: 20px;
   padding-left: 5px;
   margin: 0;
 }
 
 menu {
+  display: none;
   color: white;
   background-color: black;
   list-style: none;
-  padding-left: 45px;
-  z-index: 5;
+  padding-left: 110px;
+  z-index: 1;
   width: 100vw;
-  display: none;
   position: fixed;
   left: 0;
-  top: 10vh;
+  top: 8vh;
 }
 
 menu li {
-  margin: 12px 0px;
+  margin: 20px 0px;
   text-transform: uppercase;
 }
 
@@ -80,5 +83,14 @@ menu li {
 
   a {
     display: block;
+  }
+
+  img {
+    height: 3.5vh;
+    margin-left: 30px;
+  }
+
+  nav {
+    padding: 25px 80px;
   }
 }
