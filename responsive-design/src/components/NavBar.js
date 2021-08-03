@@ -11,8 +11,8 @@ const NavBar = ({ links, isMenuOpen, toggleMenu }) => {
                 </ul>
                 <a onClick={toggleMenu}>Menu<img src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-1.jpg" /></a>
             </nav>
-            <menu className={isMenuOpen ?  'menu-visible' : 'menu-hidden'}>
-                {links.map(link => <li>{link}</li>)}
+            <menu className={isMenuOpen ? 'menu-visible' : 'menu-hidden'}>
+                {links.map(link => <li >{link}</li>)}
             </menu>
         </div>
 
