@@ -1,6 +1,6 @@
 import './Services.css';
 
-const Services = ({ links }) => {
+const Services = () => {
 
     return (
      <section>

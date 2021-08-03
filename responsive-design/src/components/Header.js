@@ -1,6 +1,6 @@
 import './Header.css';
 
-const Header = ({ links }) => {
+const Header = () => {
 
     return (
         <header>

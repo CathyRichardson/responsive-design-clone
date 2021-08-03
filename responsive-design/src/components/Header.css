@@ -32,6 +32,11 @@ button {
   font-weight: 700;
   border-radius: 0.25rem;
   border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #d9aa00;
 }
 
 @media (max-width: 990px) {
